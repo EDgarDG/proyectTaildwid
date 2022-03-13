@@ -13,6 +13,10 @@ class ControllerMenu extends Controller {
         
         /// return view("layouts.plantillaFormatoHC");
         return view("formHistoriaClinica.formHistoriaCli");
+    }
 
+    public function formHistory2 () {
+
+        return view("formHistoriaClinica.formHistory2");
     }
 }

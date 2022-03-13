@@ -23,8 +23,13 @@
         <img class="w-40 m-auto" src="{{ asset('img/LogoCentroMedico.png') }}" alt="CentroMedico">
     </div>
 
-    <div class="contenido">
-        @yield("contenido")
+    <div class="contenido-1">
+        @yield("contenido1")
+
+    </div>
+
+    <div class="contenido-2">
+        @yield("contenido2")
 
     </div>
 

@@ -4,7 +4,7 @@
 
 @endsection
 
-@section("contenido")
+@section("contenido1")
 
     <h2 class="text-3xl">Insertar datos</h2>
 
@@ -132,6 +132,9 @@
 
 @endsection
 
+@section("contenido2")
+
+@endsection
 
 @section("piePagina")
 
