@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/formHistoryCli', [ControllerMenu::class, 'formaHisClinico']);
 Route::get('/formHistoryCli2', [ControllerMenu::class, 'formHistory2']);
+Route::get('/formHistoryCli2', [ControllerMenu::class, 'formHistory2']);
