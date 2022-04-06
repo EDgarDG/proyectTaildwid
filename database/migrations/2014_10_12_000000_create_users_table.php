@@ -11,8 +11,12 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
-    {
+
+    /***** ESTE METODO CREA TABLAS ******/
+    public function up() {
+        
+        /***** CREA TABLA LLAMADA USERS CON LOS SIGUIENTES CAMPOS name, email, email_verified... ******/
+        /***** DOS METODOS LLAMADOS rememberToken y timestamps******/
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -29,8 +33,9 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+
+    /***** ESTE METODO ELIMINA TABLAS ******/
+    public function down() {
         Schema::dropIfExists('users');
     }
 };

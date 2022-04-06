@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ControllerFormHistCli\ControllerMenu;
+use App\Http\Controllers\Planos\PlanosDepaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,6 @@ Route::get('/', function () {
 
 Route::get('/formHistoryCli', [ControllerMenu::class, 'formaHisClinico']);
 Route::get('/formHistoryCli2', [ControllerMenu::class, 'formHistory2']);
-Route::get('/formHistoryCli2', [ControllerMenu::class, 'formHistory2']);
+
+/* DECLARACION DE RUTA CON UN MEDODO IDENTIFICATIVO (->NAME) */
+Route::get('plano/Departamentos', [PlanosDepaController::class, 'index'])->name('planoDepa.index');
